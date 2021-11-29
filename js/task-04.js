@@ -25,5 +25,3 @@ console.log(builder.value); // '^.^'
 
 builder.pad('=');
 console.log(builder.value); // '=^.^='
-
-get(builder);
