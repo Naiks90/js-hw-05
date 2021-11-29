@@ -28,21 +28,21 @@ class Car {
     if (value <= this.maxSpeed) {
       this.speed += value;
     } else {
-      `Ви не можите нехать с такоой скоростью`;
+      console.log(`Ви не можите нехать с такоой скоростью`);
     }
   }
   decelerate(value) {
     if (this.speed - value > 0) {
       this.speed -= value;
     } else {
-      `Вы не можете ехать назад`;
+      console.log(`Вы не можете ехать назад`);
     }
   }
   drive(hours) {
     if (this.isOn) {
       this.distance += hours * this.speed;
     } else {
-      `Машина не заведена`;
+      console.log(`Машина не заведена`);
     }
   }
 }
